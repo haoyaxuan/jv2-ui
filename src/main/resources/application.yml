@@ -1,0 +1,5 @@
+server:
+  port: 8088
+
+logging:
+  file: /data/logs/jv2-ui/logback.log

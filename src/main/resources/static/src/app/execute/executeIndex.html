@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs-6 form-group">
+        <div class="input-group">
+            <label class="input-group-addon">数据源</label>
+            <input type="text" class="form-control" style="color: #000" ng-model="data.remote" readonly="readonly" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="form-group">
+            <textarea placeholder="执行SQL&#10;注：需要字符串格式数据" class="form-control" rows="10" ng-model="data.executeSql"></textarea>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-3 form-group">
+        <div class="btn-group">
+            <button class="btn btn-info" type="button" ng-click="execute()" disable="{{btn.disable}}">执行</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="form-group">
+            <textarea placeholder="结果" class="form-control" rows="10" ng-model="data.result"></textarea>
+        </div>
+    </div>
+</div>
